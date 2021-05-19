@@ -1,0 +1,211 @@
+// imports
+
+@import url(_normalize.scss);
+
+// mixins
+
+// vars
+
+$action-color: #0094E7;
+$main-text-color: #888888;
+$header-colors: #C7C7C7;
+
+// resets and global styles
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "nav content";
+    grid-template-columns: 315px 1105px;
+    grid-template-rows: 1fr;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111111;
+}
+
+// side-bar
+
+.sidebar-menu {
+    grid-area: nav;
+    padding: 28px 0px 0px 12px;
+
+    &__header {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    &__menu-icon {
+        margin-right: 50px;
+        margin-left: 14px;
+        align-self: center;
+        cursor: pointer;
+    }
+
+    &__user-info {
+        display: flex;
+        margin-bottom: 35px;
+    }
+
+    &__user-avatar {
+        align-self: center;
+        margin-right: 14px;
+    }
+
+    &__user-wrapper {}
+
+    &__user-name {
+        font-weight: 400;
+        font-size: 20px;
+        color: $header-colors;
+    }
+
+    &__subs {
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 18px;
+        color: #616161;
+    }
+
+    &__exit-button {
+        font-weight: 400;
+        font-size: 18px;
+        color: #868688;
+
+        &::before {
+            position: relative;
+            display: flex;
+            align-self: center;
+            float: left;
+            margin-right: 5px;
+            content: "";
+            width: 15px;
+            height: 18px;
+            background-image: url("../img/exit-icon.png");
+        }
+    }
+}
+
+.logo {
+    align-self: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        padding: 14px;
+        color: $main-text-color;
+
+        &::before {
+            position: relative;
+            float: left;
+            margin-right: 20px;
+            width: 16px;
+            height: 16px;
+            content: "";
+            background-repeat: no-repeat;
+        }
+
+        &:hover {
+            border-radius: 5px;
+            background-color: $action-color;
+            color: #DADADA;
+        }
+    }
+
+    &__title {
+        margin: 20px 0 14px 0;
+        font-weight: 700;
+        font-size: 20px;
+        color: $header-colors;
+    }
+}
+
+#home::before {
+    background-image: url(../img/channels.png);
+}
+
+#subs::before {
+    background-image: url(../img/pointer.png);
+}
+
+#my-channel::before {
+    background-image: url(../img/user.png);
+}
+
+#history::before {
+    background-image: url(../img/history.png);
+}
+
+#channels::before {
+    background-image: url(../img/channels.png);
+}
+
+#music::before {
+    background-image: url(../img/music.png);
+}
+
+#theme::before {
+    background-image: url(../img/theme.png);
+}
+
+#settings::before {
+    background-image: url(../img/settings.png);
+}
+
+#upload::before {
+    background-image: url(../img/upload.png);
+}
+
+.main {
+    grid-area: content;
+    padding: 28px;
+}
+
+.recommendation {
+
+    &__wrapper {
+    }
+
+    &__video {
+    }
+
+    &__preview {
+    }
+
+    &__vide-info {
+    }
+
+    &__title {
+    }
+
+    &__stats {
+    }
+
+    &__user {
+    }
+
+    &__user-avatar {
+    }
+
+    &__user-name {
+    }
+
+    &__desc {
+    }
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 22px;
+    color: $header-colors;
+}
