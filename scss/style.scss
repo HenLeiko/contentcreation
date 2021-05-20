@@ -25,7 +25,7 @@ a {
 body {
     display: grid;
     grid-template-areas: "nav content";
-    grid-template-columns: 315px 1105px;
+    grid-template-columns: 20% 1105px;
     grid-template-rows: 1fr;
     font-family: 'Montserrat', sans-serif;
     background-color: #111111;
@@ -35,7 +35,8 @@ body {
 
 .sidebar-menu {
     grid-area: nav;
-    padding: 28px 0px 0px 12px;
+    padding: 28px 0px 0px 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 
     &__header {
         display: flex;
@@ -75,13 +76,14 @@ body {
     }
 
     &__exit-button {
+        display: flex;
         font-weight: 400;
         font-size: 18px;
+        cursor: pointer;
         color: #868688;
 
         &::before {
             position: relative;
-            display: flex;
             align-self: center;
             float: left;
             margin-right: 5px;
@@ -89,6 +91,7 @@ body {
             width: 15px;
             height: 18px;
             background-image: url("../img/exit-icon.png");
+            background-repeat: no-repeat;
         }
     }
 }
@@ -116,9 +119,14 @@ body {
         }
 
         &:hover {
+            transition: 0.2s ease-in-out;
             border-radius: 5px;
             background-color: $action-color;
             color: #DADADA;
+        }
+
+        &:hover::before {
+            filter: invert(100%);
         }
     }
 
@@ -168,39 +176,97 @@ body {
 
 .main {
     grid-area: content;
-    padding: 28px;
+    padding: 20px 0 28px 28px;
 }
+
+// recommendation
 
 .recommendation {
 
     &__wrapper {
+        display: flex;
+        padding: 20px 0;
     }
 
     &__video {
+        position: relative;
+        cursor: pointer;
+
+        &:hover .recommendation__hover{
+            display: block;
+        }
+
+        &:hover .recommendation__preview{
+            transition: 0.2s ease-in-out;
+            filter: brightness(70%);
+        }
+    }
+
+    &__hover{
+        z-index: 5;
+        display: none;
+        position: absolute;
+        top: 35%;
+        left: 45%;
+    }
+
+    &__view {
+        color: $main-text-color;
     }
 
     &__preview {
+        position: relative;
+        max-height: 390px;
+        height: 100%;
+        min-width: 667px;
+        width: 100%;
     }
 
     &__vide-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 24px;
+        color: $header-colors;
     }
 
     &__title {
+        font-weight: 700;
+        font-size: 20px;
+        color: $header-colors;
+        line-height: 23px;
     }
 
     &__stats {
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        color: $main-text-color;
     }
 
     &__user {
+        display: flex;
+        align-items: center;
+        margin-bottom: 17px;
     }
 
     &__user-avatar {
+        margin-right: 10px;
     }
 
     &__user-name {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: $main-text-color;
     }
 
     &__desc {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: $main-text-color;
+        max-width: 308px;
+        width: 100%;
     }
 }
 
@@ -209,3 +275,157 @@ body {
     font-size: 22px;
     color: $header-colors;
 }
+
+// search
+
+.search {
+    position: relative;
+    display: flex;
+
+    &__img {
+        align-self: center;
+        margin-left: 20px;
+        height: 14px;
+        width: 14px;
+    }
+
+    &__input {
+        padding: 19px;
+        width: 100%;
+        outline: none;
+        border: none;
+        font-weight: 400;
+        font-size: 18px;
+        border-bottom: 2px solid #0D0D0D;
+        color: $main-text-color;
+        background-color: transparent;
+    }
+}
+
+// categories
+
+.categories {
+    padding: 20px 0 40px 0;
+
+    &__wrapper {
+        display: flex;
+        padding: 22px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+
+        &:hover .categories__ico {
+            transition: 0.2s ease-in-out;
+            background-color: $action-color;
+        }
+    }
+
+    &__ico {
+        display: flex;
+        margin-bottom: 10px;
+        width: 56px;
+        height: 56px;
+    }
+
+    &__img {
+        display: flex;
+        margin: 0 auto;
+        align-self: center;
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #fff;
+    }
+}
+
+// interesting
+
+.interesting {
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 326px);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+    padding: 22px 0px 0px 22px;
+}
+
+.video-item {
+
+		&__preview {
+            margin-bottom: 14px;
+            max-width: 326px;
+            max-height: 184px;
+            border-radius: 10px;
+
+            &:hover {
+                transition: 0.2s ease-in-out;
+                padding: 5px 5px 0 0;
+                -webkit-box-shadow: -5px 5px 0px 0px rgba(0, 148, 231, 1);
+                -moz-box-shadow: -5px 5px 0px 0px rgba(0, 148, 231, 1);
+                box-shadow: -5px 5px 0px 0px rgba(0, 148, 231, 1);
+            }
+		}
+
+		&__wrapper {
+            display: flex;
+            margin-bottom: 10px;
+		}
+
+		&__avatar {
+            margin-right: 8px;
+            align-self: center;
+            width: 37px;
+            height: 37px;
+		}
+
+		&__info {
+		}
+
+		&__title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: $header-colors;
+		}
+
+		&__user-name {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: $main-text-color;
+		}
+
+		&__stats {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+            color: $main-text-color;
+		}
+}
+
+.get-more {
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 21px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: $action-color;
+
+    &__arrow {
+        margin-left: 8px;
+    }
+}
+
