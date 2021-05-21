@@ -431,3 +431,149 @@ body {
     }
 }
 
+// player page
+
+.video-page {
+    display: grid;
+    grid-template-columns: 80% auto;
+    grid-template-rows: 1fr;
+    grid-gap: 50px;
+    margin-top: 70px;
+    margin-left: 25px;
+}
+
+.video {
+
+    &__player {
+        max-width: 927px;
+        max-height: 525px;
+    }
+
+    &__title {
+        margin-top: 25px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25px;
+        color: #BBBBBB;
+    }
+
+    &__views {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+        color: #BBBBBB;
+    }
+
+    &__channel {
+        display: flex;
+        margin-top: 23px;
+    }
+
+    &__avatar {
+        margin-right: 14px;
+        max-width: 78px;
+        max-height: 78px;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__user-info {
+
+    }
+
+    &__username {
+        font-weight: 400;
+        font-size: 20px;
+        color: #BBBBBB;
+    }
+
+    &__subs {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #616161;
+    }
+
+    &__desc {
+        margin-top: 18px;
+        max-width: 660px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #BBBBBB;
+    }
+}
+.comments {
+    padding: 23px 0;
+
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        color: #BBBBBB;
+    }
+
+    &__form {
+        display: flex;
+        margin-top: 18px;
+        margin-bottom: 70px;
+    }
+
+    &__avatar {
+        margin-right: 24px;
+        max-width: 41px;
+        max-height: 41px;
+    }
+
+    &__input {
+        padding: 10px;
+        color: #BBBBBB;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #0D0D0D;
+    }
+    
+    &__item {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 26px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-weight: 400;
+        font-size: 18px;
+        color: #656565;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #BBBBBB;
+    }
+
+    &__answer {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #BBBBBB;
+    }
+}
+
+.other-videos {
+    
+    .video-item {
+
+        &:not(:last-child) {
+            margin-bottom: 36px;
+        }
+    }
+}

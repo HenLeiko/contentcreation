@@ -460,4 +460,150 @@ body {
 .get-more__arrow {
   margin-left: 8px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.video-page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% auto;
+      grid-template-columns: 80% auto;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-gap: 50px;
+  margin-top: 70px;
+  margin-left: 25px;
+}
+
+.video__player {
+  max-width: 927px;
+  max-height: 525px;
+}
+
+.video__title {
+  margin-top: 25px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  color: #BBBBBB;
+}
+
+.video__views {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  color: #BBBBBB;
+}
+
+.video__channel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 23px;
+}
+
+.video__avatar {
+  margin-right: 14px;
+  max-width: 78px;
+  max-height: 78px;
+  width: 100%;
+  height: 100%;
+}
+
+.video__username {
+  font-weight: 400;
+  font-size: 20px;
+  color: #BBBBBB;
+}
+
+.video__subs {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #616161;
+}
+
+.video__desc {
+  margin-top: 18px;
+  max-width: 660px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #BBBBBB;
+}
+
+.comments {
+  padding: 23px 0;
+}
+
+.comments__title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #BBBBBB;
+}
+
+.comments__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 18px;
+  margin-bottom: 70px;
+}
+
+.comments__avatar {
+  margin-right: 24px;
+  max-width: 41px;
+  max-height: 41px;
+}
+
+.comments__input {
+  padding: 10px;
+  color: #BBBBBB;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #0D0D0D;
+}
+
+.comments__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comments__item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.comments__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.comments__name {
+  font-weight: 400;
+  font-size: 18px;
+  color: #656565;
+}
+
+.comments__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #BBBBBB;
+}
+
+.comments__answer {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #BBBBBB;
+}
+
+.other-videos .video-item:not(:last-child) {
+  margin-bottom: 36px;
+}
