@@ -351,8 +351,8 @@ body {
 }
 
 .categories__item:hover .categories__ico {
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out 0.2s;
+  transition: 0.2s ease-in-out 0.2s;
   background-color: #0094E7;
 }
 
@@ -360,9 +360,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
   margin-bottom: 10px;
   width: 56px;
   height: 56px;
+  border-radius: 5px;
 }
 
 .categories__img {
@@ -458,3 +460,4 @@ body {
 .get-more__arrow {
   margin-left: 8px;
 }
+/*# sourceMappingURL=style.css.map */
