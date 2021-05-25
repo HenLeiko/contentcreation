@@ -1,10 +1,14 @@
 <?php
 
 
-namespace app\controllers;
+//namespace app\controllers;
 
+use app\core\Controller;
 
-class SubsController
+class SubsController extends Controller
 {
-
+    public function index()
+    {
+        $this->view->generate('subs.php', 'template.php');
+    }
 }

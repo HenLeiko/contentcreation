@@ -1,10 +1,14 @@
 <?php
 
 
-namespace app\controllers;
+//namespace app\controllers;
 
+use app\core\Controller;
 
-class UploadController
+class UploadController extends Controller
 {
-
+    public function index()
+    {
+        $this->view->generate('upload.php', 'template.php');
+    }
 }

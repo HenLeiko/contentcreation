@@ -1,0 +1,19 @@
+{
+    "name": "a/a",
+    "description": "new project",
+    "authors": [
+        {
+            "name": "Molyakov Alexandr",
+            "email": "vd50_a.i.molyakov@mpt.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "gabordemooij/redbean": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\core\\": "app/core"
+        }
+    }
+}

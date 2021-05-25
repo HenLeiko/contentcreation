@@ -1,10 +1,14 @@
 <?php
 
 
-namespace app\controllers;
+//namespace app\controllers;
 
+use app\core\Controller;
 
-class ViewController
+class ViewController extends Controller
 {
-
+    public function index()
+    {
+        $this->view->generate('view.php', 'template.php');
+    }
 }

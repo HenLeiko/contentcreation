@@ -1,5 +1,5 @@
 <main class="auth">
-        <form action="/register" class="auth__form">
+        <form action="register/reg" method="post" class="auth__form">
             <h1 class="auth__title">Регистрация</h1>
             <label for="email" class="auth__label">Введите почту</label>
             <input type="email" placeholder="Введите почту" name="email" id="email" class="auth__input">
@@ -10,5 +10,6 @@
             <label for="repeat-password" class="auth__label">Повторите пароль</label>
             <input type="password" placeholder="Повторите пароль" name="repeat-password" id="repeat-password" class="auth__input">
             <input type="submit" value="Войти" class="action-button">
+            <a href="/login" class="upload-video__cancel-button">Войти</a>
         </form>
     </main>
