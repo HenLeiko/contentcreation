@@ -352,7 +352,15 @@ body {
 
 // interesting
 
-.interesting {}
+.new,
+.interesting {
+    max-width: 1050px;
+    
+    .video-grid {
+        padding: 22px;
+        
+    }
+}
 
 .video-grid {
     display: grid;
@@ -428,11 +436,12 @@ body {
     }
 }
 
+
 // player page
 
 .video-page {
     display: grid;
-    grid-template-columns: 80% auto;
+    grid-template-columns: 60% auto;
     grid-template-rows: 1fr;
     grid-gap: 50px;
     margin-top: 70px;

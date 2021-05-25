@@ -384,6 +384,16 @@ body {
   color: #fff;
 }
 
+.new,
+.interesting {
+  max-width: 1050px;
+}
+
+.new .video-grid,
+.interesting .video-grid {
+  padding: 22px;
+}
+
 .video-grid {
   display: -ms-grid;
   display: grid;
@@ -463,8 +473,8 @@ body {
 .video-page {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 80% auto;
-      grid-template-columns: 80% auto;
+  -ms-grid-columns: 60% auto;
+      grid-template-columns: 60% auto;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   grid-gap: 50px;
