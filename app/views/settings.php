@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ContentCreator</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -15,11 +15,11 @@
 
     <aside class="sidebar-menu">
         <div class="sidebar-menu__header">
-            <img src="img/menu-cut.png" alt="Меню" class="sidebar-menu__menu-icon">
-            <img src="img/logo.png" alt="Content Creation" class="logo">
+            <img src="../../img/menu-cut.png" alt="Меню" class="sidebar-menu__menu-icon">
+            <img src="../../img/logo.png" alt="Content Creation" class="logo">
         </div>
         <div class="sidebar-menu__user-info">
-            <img src="img/avatar.png" alt="Аватар" class="sidebar-menu__user-avatar">
+            <img src="../../img/avatar.png" alt="Аватар" class="sidebar-menu__user-avatar">
             <div class="sidebar-menu__user-wrapper">
                 <div class="sidebar-menu__user-name">Cameron Williamson</div>
                 <div class="sidebar-menu__subs">1023 подписчиков</div>
@@ -44,7 +44,7 @@
     <main class="settings">
         <form action="" method="post" class="settings__form">
             <div class="settings__avatar-settings">
-                <img src="img/avatar.png" alt="Аватар" class="settings__avatar-img">
+                <img src="../../img/avatar.png" alt="Аватар" class="settings__avatar-img">
                 <div class="settings__avatar-wrapper">
                     <label for="uploadavatar" class="settings__avatar-label">Изменить изображение</label>
                     <input type="file" name="uploadavatar" id="uploadavatar" class="settings__avatar-input">
