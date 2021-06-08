@@ -9,7 +9,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "gabordemooij/redbean": "dev-master"
+        "gabordemooij/redbean": "dev-master",
+        "php-ffmpeg/php-ffmpeg": "v1.x-dev"
     },
     "autoload": {
         "psr-4": {

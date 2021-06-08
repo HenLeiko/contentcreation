@@ -1,7 +1,7 @@
 <?php
 
 
-//namespace app\controllers;
+// namespace app\controllers;
 
 use app\core\Controller;
 
@@ -18,8 +18,6 @@ class LoginController extends Controller
             $err = $this->model->login($_POST['login'], $_POST['password']);
         }
         $this->view->generate('login.php', 'template.php', $err);
-
-
     }
 
 }

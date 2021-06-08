@@ -1,15 +1,11 @@
 <?php
 
 
-//namespace app\models;
+// namespace app\models;
 
 use app\core\Model;
 class RegisterModel extends Model
 {
-    protected $email;
-    protected $login;
-    protected $password;
-    protected $repeatPassword;
 
     public function insert($email, $login, $password, $repeatPassword)
     {
@@ -22,6 +18,6 @@ class RegisterModel extends Model
         $_SESSION['login'] = $login;
         R::store($user);
         $_SESSION['id'] = $user->id;
-//        header('Location: /');
+        header('Location: /');
     }
 }

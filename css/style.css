@@ -116,6 +116,8 @@ body {
 
 .nav__item {
   padding: 14px;
+  width: 100%;
+  cursor: pointer;
   color: #888888;
 }
 
@@ -142,11 +144,22 @@ body {
           filter: invert(100%);
 }
 
+.nav__file-input {
+  position: absolute;
+  width: 0.1px;
+  height: 0.1px;
+  visibility: hidden;
+}
+
 .nav__title {
   margin: 20px 0 14px 0;
   font-weight: 700;
   font-size: 20px;
   color: #C7C7C7;
+}
+
+.nav__label {
+  cursor: pointer;
 }
 
 #home::before {
@@ -320,8 +333,8 @@ body {
   border: none;
   font-weight: 400;
   font-size: 18px;
-  border-bottom: 2px solid #0D0D0D;
   color: #888888;
+  border-bottom: 2px solid #0D0D0D;
   background-color: transparent;
 }
 
@@ -404,19 +417,27 @@ body {
   grid-gap: 30px;
 }
 
-.video-item__preview {
-  margin-bottom: 14px;
-  max-width: 326px;
-  max-height: 184px;
-  border-radius: 10px;
-}
-
-.video-item__preview:hover {
+.video-item:hover .video-item__preview {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   padding: 5px 5px 0 0;
   -webkit-box-shadow: -5px 5px 0px 0px #0094e7;
   box-shadow: -5px 5px 0px 0px #0094e7;
+}
+
+.video-item:hover .video-item__title {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  color: #0094E7;
+}
+
+.video-item__preview {
+  margin-bottom: 14px;
+  max-width: 326px;
+  max-height: 184px;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .video-item__wrapper {
@@ -570,6 +591,8 @@ body {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #0D0D0D;
+  width: 100%;
+  outline: none;
 }
 
 .comments__item {
@@ -740,7 +763,7 @@ body {
   margin-bottom: 60px;
 }
 
-.upload-video__info-warpper {
+.upload-video__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

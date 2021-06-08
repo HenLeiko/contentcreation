@@ -1,9 +1,8 @@
-
-    <main class="subs">
-        <section class="search">
-            <img src="../../img/search.png" alt="Искать" class="search__img">
-            <input type="search" placeholder="Поиск..." name="search" id="search"  class="search__input">
-        </section>
+<main class="subs">
+    <section class="search">
+        <img src="../../img/search.png" alt="Искать" class="search__img">
+        <input type="search" placeholder="Поиск..." name="search" id="search" class="search__input">
+    </section>
     <section class="video-grid">
         <div class="video-item">
             <img src="../../img/vidos.png" alt="Видео" class="video-item__preview">
